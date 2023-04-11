@@ -1,5 +1,6 @@
 package ar.edu.unju.edm;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Ejercicios {
     public static void main(String[] args) {
@@ -97,7 +98,39 @@ public class Ejercicios {
 		return true;
 	}
   public static void Punto4() { Scanner scanner = new Scanner(System.in);
-  
+	    int s, i, opcion;
+	    s = 30;
+	    i = 8;
+	    opcion = 1;
+	    if(s > i){
+	      switch (opcion){
+	        case 1:{
+	          System.out.println("Impares");
+	          for( int j = i; j<= s; j++ ){
+	            if( j%2 != 0){
+	              System.out.println(j);
+	            }
+	          }
+	          break;
+	        }
+	        case 2:{
+	          System.out.print("Pares");
+	          for( int j = i; j<=s; j++){
+	            if( j%2 == 0){
+	              System.out.println(j);
+	            }
+	          }
+	          break;
+	        }
+	        default:{
+	          System.out.print("Erroneo");
+	          break;
+	        }
+	      }
+	    }
+	    else{
+	      System.out.println("Invalido");
+	    }
   }
   public static void Punto5() { Scanner scanner = new Scanner(System.in);
   System.out.println();
